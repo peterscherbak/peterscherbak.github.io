@@ -4,6 +4,7 @@ excerpt: "Hydro sims 1<br/>
 Massive star and compact accretor
 Mass transfer through L1"
 collection: portfolio
+permalink: /portfolio/item1/
 ---
 
 More about mass transfer
