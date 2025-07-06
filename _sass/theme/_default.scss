@@ -9,6 +9,9 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : #9ba1a6;
 $lighter-gray               : mix(#fff, $gray, 90%);
 
+$light-blue                 : #e0f7ff;
+
+
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
 $info-color                 : #2f7f93;
@@ -28,8 +31,8 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Default light theme for the site */
 :root {
-    --global-base-color                 : #{$gray};
-    --global-bg-color                   : #fff;
+    --global-base-color                 : #{$light-blue};
+    --global-bg-color                   : #{$light-blue};
     --global-footer-bg-color            : #f2f3f3;
     --global-border-color               : #{$lighter-gray};
     --global-dark-border-color          : #bdc1c4;
