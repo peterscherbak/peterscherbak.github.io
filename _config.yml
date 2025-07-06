@@ -28,8 +28,8 @@ author:
   bio              : #"Short biography for the left-hand sidebar"
   location         : "Pasadena, Ca"
   employer         : "California Institute of Technology"
-  uri              : # URL
-  contact            : "pscherba@caltech.edu" 
+  url             : # URL
+  email            : "pscherba@caltech.edu" 
 
   # Academic websites
   academia         : # URL
