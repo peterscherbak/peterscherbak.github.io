@@ -26,10 +26,10 @@ author:
   name             : "Peter Scherbak"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  location         : "Pasadena, Ca"
   employer         : "California Institute of Technology"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "pscherba@caltech.edu" 
 
   # Academic websites
   academia         : # URL
@@ -217,7 +217,7 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: false
+    output: true
     permalink: /:collection/:path/
   publications:
     output: true
