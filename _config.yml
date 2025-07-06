@@ -250,6 +250,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      css: "/assets/css/custom.css"
   # _teaching
   - scope:
       path: ""
@@ -268,6 +269,7 @@ defaults:
       author_profile: false
       share: true
       comments: true
+      css: "/assets/css/custom.css"
   # _portfolio
   - scope:
       path: ""
