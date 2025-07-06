@@ -2,6 +2,9 @@
 layout: single
 title: "About Me"
 permalink: /about_me/
+redirect_from: 
+  - /about_me/
+  - /about_me.html
 
 ---
 
