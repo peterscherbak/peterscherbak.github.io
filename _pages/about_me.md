@@ -2,8 +2,6 @@
 layout: single
 title: "About Me"
 permalink: /about_me/
-
-
 ---
 
 I’m Peter Scherbak, a PhD candidate in astrophysics at Caltech. 
