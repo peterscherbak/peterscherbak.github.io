@@ -5,4 +5,9 @@ permalink: /cv_link/
 author_profile: true
 ---
 
-Link to CV here.
+
+<div style="text-align: center;">
+  Link to CV here.
+</div>
+
+
