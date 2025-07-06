@@ -10,6 +10,11 @@
 main:
   - title: "Research"
     url: /portfolio/
+    children:
+      - title: "Mass Transfer Simulations"
+        url: /portfolio/item1/
+      - title: "Radiative Feedback Models"
+        url: /portfolio/item2/
 
  
     
