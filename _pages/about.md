@@ -10,6 +10,10 @@ redirect_from:
   Peter Scherbak
 </div>
 
-PhD Candidate in Astrophysics at Caltech  
-Studying binary stars, radiation hydrodynamics, and stellar evolution.
+
+
+Hello! I am a PhD Candidate in Astrophysics at Caltech.
+
+
+I study binary stars including compact binaries, hydrodynamics of mass transfer, and stellar evolution. See links above for more about my work. 
 
