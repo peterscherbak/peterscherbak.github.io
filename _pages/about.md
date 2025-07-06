@@ -15,5 +15,5 @@ redirect_from:
 Hello! I am a PhD Candidate in Astrophysics at Caltech.
 
 
-I study binary stars including compact binaries, hydrodynamics of mass transfer, and stellar evolution. See links above for more about my work. 
+I study binary stars including compact binaries, hydrodynamics of mass transfer, and stellar evolution. See links above for more about my work. This website is a work in progress.
 
