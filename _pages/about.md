@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 <div style="text-align: center; font-size: 2.2em; font-weight: bold;">
-  Peter Scherbak
+  Peter Scherbak. WEBSITE UNDER CONSTRUCTION
 </div>
 
 
