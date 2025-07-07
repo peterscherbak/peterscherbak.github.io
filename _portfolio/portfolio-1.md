@@ -17,3 +17,6 @@ permalink: /portfolio/item1/
 <div>
   More about mass transfer
 </div>
+
+
+<img src='/images/foo-bar-identity-th.jpg'>
