@@ -37,5 +37,5 @@ For academic inquiries, please reach me at my Caltech email.
 - [KITP Conference Presentation - Kavli Institute for Theoretical Physics](https://www.youtube.com/watch?v=UxXSa61g1Tg)
   Recorded talk on binary star evolution and mass transfer.
 
-- [Peter Scherbak - GitHub Research Code](https://github.com/peterscherbak)  
+- [Peter Scherbak - GitHub Code](https://github.com/peterscherbak)  
   Open-source project repositories.
