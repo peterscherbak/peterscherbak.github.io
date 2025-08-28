@@ -7,7 +7,7 @@ Visit my [personal website] (https://peterscherbak.github.io) for research updat
 ---
 
 ## Research Interests
-My work focuses on **binary star systems, white dwarfs, and transients**, with particular interest in **mass transfer, tidal physics, and the role of common envelope evolution in stellar astrophysics**. I use **theoretical models and computational simulations** to study the evolution of compact binary systems.”
+My work focuses on **binary star systems, white dwarfs, and transients**, with particular interest in **mass transfer, tidal physics, and the role of common envelope evolution in stellar astrophysics**. I use **theoretical models and computational simulations** to study the evolution of compact binary systems.
 
 ---
 
