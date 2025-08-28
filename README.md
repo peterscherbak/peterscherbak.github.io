@@ -25,8 +25,8 @@ For academic inquiries, please reach me at my Caltech email.
 - [Peter Scherbak - ORCID Research Profile](https://orcid.org/0000-0003-4221-9097)
   Verified ORCID record with publications and academic contributions.
 
-- [Peter Scherbak - White Dwarf Binary Research (arXiv)](https://arxiv.org/abs/2401.14397)
-  Paper on ultrashort-period white dwarf binaries that are not undergoing strong tidal heating.
+- [Peter Scherbak - White Dwarf Binary Research (arXiv)](https://iopscience.iop.org/article/10.3847/1538-4357/ad1dd6)
+  Paper on ultrashort-period white dwarf binaries that are undergoing tidal heating.
 
 - [Peter Scherbak - MNRAS Publication on Common Envelope Evolution](https://academic.oup.com/mnras/article/518/3/3966/6832783) 
   Peer-reviewed article suggesting a common envelope phase in white dwarf binary systems.
@@ -38,4 +38,4 @@ For academic inquiries, please reach me at my Caltech email.
   Recorded talk on binary star evolution and mass transfer.
 
 - [Peter Scherbak - GitHub Research Code](https://github.com/peterscherbak)  
-  Open-source astrophysics tools, simulations, and project repositories.
+  Open-source project repositories.
