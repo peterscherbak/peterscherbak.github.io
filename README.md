@@ -19,7 +19,7 @@ For academic inquiries, please reach me at my Caltech email.
 
 ## Useful Links
 
-- [Peter Scherbak - Curriculum Vitae (PDF)](scherbak_cv.pdf)  
+- [Peter Scherbak - Curriculum Vitae (PDF)](https://peterscherbak.github.io/scherbak_cv.pdf)  
   Academic CV including research, teaching experience, and awards.
 
 - [Peter Scherbak - ORCID Research Profile](https://orcid.org/0000-0003-4221-9097)
