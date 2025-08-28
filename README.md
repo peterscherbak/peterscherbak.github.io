@@ -25,7 +25,7 @@ For academic inquiries, please reach me at my Caltech email.
 - [Peter Scherbak - ORCID Research Profile](https://orcid.org/0000-0003-4221-9097)
   Verified ORCID record with publications and academic contributions.
 
-- [Peter Scherbak - White Dwarf Binary Research (arXiv)](https://iopscience.iop.org/article/10.3847/1538-4357/ad1dd6)
+- [Peter Scherbak - White Dwarf Binary Research](https://iopscience.iop.org/article/10.3847/1538-4357/ad1dd6)
   Paper on ultrashort-period white dwarf binaries that are undergoing tidal heating.
 
 - [Peter Scherbak - MNRAS Publication on Common Envelope Evolution](https://academic.oup.com/mnras/article/518/3/3966/6832783) 
