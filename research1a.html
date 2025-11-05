@@ -7,7 +7,7 @@
 		<title>Peter Scherbak | Radiatively-cooled Mass Transfer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="3-dimensional hydrodynamical simulations of mass transfer between a giant star and a point mass accretor.">
+		<meta name="description" content="3-dimensional hydrodynamical simulations of mass transfer between a massive star and a point mass accretor.">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		
 		
@@ -37,6 +37,11 @@
         width: 75%; /* or whatever fits your design */
       }
     }
+
+
+		i, em {
+  font-style: italic;
+}
   	</style>
 		
 		
@@ -87,18 +92,28 @@
 										</header>			
 										
 										<p>
-											<h3>A movie of the equatorial plane of four of the MT simulations I performed, for decreasing MT rate (10<sup>−1</sup> M&odot;/yr, 10<sup>−2</sup> M&odot;/yr, 10<sup>−3</sup> M&odot;/yr, 10<sup>−5</sup> M&odot;/yr). Mass is initialized in an envelope atop the donor's core. As time progresses, mass flows toward the companion, located a distance a from the donor. Also labeled 
+											<h3>A movie of the equatorial plane of four of the MT simulations I performed, for decreasing MT rate (10<sup>-1</sup> M&odot;/yr, 10<sup>-2</sup> M&odot;/yr, 10<sup>-3</sup> M&odot;/yr, 10<sup>-5</sup> M&odot;/yr). Mass is initialized in an envelope atop the donor's core. As time progresses, mass flows toward the companion, located a distance <i>a</i> from the donor. Also labeled 
 											are 2 Lagrange points, L2 and L3. Time is in units such that 2&pi; corresponds to 1 orbit. </h3>
 										<p>
 										
 										<p>
-										<video controls  width="450" nodownload nofullscreen noremoteplayback src="radiative_movie.mp4" type="video/mov" />
+
+											I performed hydrodynamic simulations of binary mass transfer (MT) incorporating radiative cooling of the gas. This probes a broader range of MT rates than the previous simulations (<a href="research1.html">here</a>), which assumed the 
+											gas was adiabatic and were most valid at very high MT rates (>10<sup>-2</sup> M&odot;/yr). In the simulations,  mass flows from the donor into an accretion disk, with significant equatorially-concentrated outflows through the outer Lagrange point L2 occurring for MT rates ≳10−3M⊙/yr, 
+											while the MT remains mostly conservative for lower MT rates. In all cases, any outflowing gas approximately carries the specific angular momentum of L2. The gas cooling luminosity L and temperature increases with MT rate, with L∼105L⊙ and T∼104K for simulations featuring the strongest outflows, with contributions from both the accretion disk and circumbinary outflow. 
+											Although the most luminous transients associated with mass outflows will be rare due to the high MT rate requirement, they will generate significant optical emission from both the accretor's disk and the circumbinary outflow.
+
+										
+											
+											
+										</p>
+										<video controls  width="900" nodownload nofullscreen noremoteplayback src="radiative_movie.mp4" type="video/mov" />
 										
 										
 										<img src="Teff_comb_rad.png" alt="big wolf pic"/>
 										
 										<p>
-										<p>
+										
 											
 											
 										</p>
@@ -139,6 +154,7 @@
 	</body>
 
 </html>
+
 
 
 
