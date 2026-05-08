@@ -7,12 +7,12 @@ Visit my [personal website] (https://peterscherbak.github.io) for research updat
 ---
 
 ## Research Interests
-My work focuses on **binary star systems, white dwarfs, and transients**, with particular interest in **mass transfer, tidal physics, and the role of common envelope evolution in stellar astrophysics**. I use **theoretical models and computational simulations** to study the evolution of compact binary systems.
+My PhD work focused on **binary star systems, white dwarfs, and transients**, with particular interest in **mass transfer, tidal physics, and the role of common envelope evolution in stellar astrophysics**. I built and ran numerical simulations using hydrodynamic codes (PLUTO, Athena++) and stellar evolution codes (MESA), and applied Bayesian inference and machine learning methods to extract physical parameters from observational data. I'm broadly interested in problems that sit at the intersection of physical modeling, statistical inference, and high-performance computation.
 
 ---
 
 ## Contact  
-For academic inquiries, please reach me at my Caltech email.
+For inquiries, please reach me at my Caltech email.
 - Email: pscherba@caltech.edu  
 
 ---
@@ -20,19 +20,22 @@ For academic inquiries, please reach me at my Caltech email.
 ## Useful Links
 
 - [Peter Scherbak - Curriculum Vitae (PDF)](https://peterscherbak.github.io/scherbak_cv.pdf)  
-  Academic CV including research, teaching experience, and awards.
+  Resume including experience, skills, research, and awards.
 
 - [Peter Scherbak - ORCID Research Profile](https://orcid.org/0000-0003-4221-9097)
-  Verified ORCID record with publications and academic contributions.
+  Verified ORCID record with research publications.
 
 - [Peter Scherbak - ApJ Publication on White Dwarf Binary Research](https://iopscience.iop.org/article/10.3847/1538-4357/ad1dd6)
   Paper on ultrashort-period white dwarf binaries that are undergoing tidal heating.
 
 - [Peter Scherbak - MNRAS Publication on Common Envelope Evolution](https://academic.oup.com/mnras/article/518/3/3966/6832783) 
-  Peer-reviewed article suggesting a common envelope phase in white dwarf binary systems.
+  Peer-reviewed article studying common envelope evolution in white dwarf binary systems.
 
-- [Peter Scherbak - Rapid Binary Mass Transfer Research (arXiv)](https://arxiv.org/abs/2505.21264)
-  Study on mass transfer processes in compact binary star systems.
+- [Peter Scherbak - Rapid Binary Mass Transfer Research](https://iopscience.iop.org/article/10.3847/1538-4357/adf067)
+  Study on mass transfer processes in compact binary star systems, using hydrodynamic simulations and high performance computing.
+
+- [Peter Scherbak - Radiatively-Cooled Binary Mass Transfer Research](https://iopscience.iop.org/article/10.1088/1538-3873/ae453c)
+  Study on mass transfer in compact binary star systems across a range of mass transfer rates.
 
 - [KITP Conference Presentation - Kavli Institute for Theoretical Physics](https://www.youtube.com/watch?v=UxXSa61g1Tg)
   Recorded talk on binary star evolution and mass transfer.
