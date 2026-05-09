@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	scherbak license - research page
+-->
+<html>
+	<head>
+		<title>Peter Scherbak | Magnetic Asteroseismology with Machine Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Machine learning inference of internal magnetic fields and rotation rates in gamma Doradus stars from Kepler gravity-mode oscillations.">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+	<style>
+    /* Makes the image responsive */
+    img {
+      max-width: 50%;
+      height: auto;
+      display: block;
+    }
+
+		 sub {
+      vertical-align: sub;
+      font-size: 0.8em;
+      line-height: 1;
+    }
+
+		sup {
+  vertical-align: super;
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+    /* Makes the layout responsive */
+    .main-content {
+      width: 100%;
+      padding: 1em;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+      @media (min-width: 768px) {
+      .main-content {
+        width: 75%;
+      }
+    }
+
+
+		i, em {
+  font-style: italic;
+}
+  	</style>
+		
+	</head>
+	<body class="subpage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Logo -->
+									<h1><a href="index.html" id="logo">Peter Scherbak</a></h1>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<a href="index.html">Home</a>
+										<a href="research.html">Research</a>
+										<a href="mycv.html">Resume</a>
+										<a href="aboutme.html">About Me</a>
+									</nav>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Content -->
+				<section id="content">
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-12 col-12-medium">
+
+								<!-- Main Content -->
+									<section>
+									
+										<header>		
+  <h2>Inferring Internal Magnetic Fields and Rotation in Stars with Machine Learning</h2>	
+</header>
+
+<!-- IMAGE PLACEHOLDER -->
+<img src="YOUR_IMAGE_HERE.png" alt="Period spacing pattern or posterior inference figure" />
+
+<h3>
+  <!-- CAPTION PLACEHOLDER: describe your figure here -->
+</h3>
+
+<p>
+  Main sequence stars can harbor strong internal magnetic fields whose origins and influence on stellar 
+  evolution remain poorly understood. Gravity modes - stellar oscillations restored by 
+  buoyancy deep in the stellar interior - carry direct imprints of interior stellar structure 
+  and offer a rare observational window into otherwise inaccessible regions. 
+  The <i>Kepler</i> space telescope has revealed these oscillations in several hundred  
+  &gamma; Doradus (&gamma; Dor) stars, which are oscillating intermediate-mass main sequence stars, through their characteristic period-spacing patterns, the nearly uniform spacing between consecutive radial modes that encodes 
+  rotation, chemical gradients, and magnetic field strength.
+</p>
+
+<p>
+  I developed a machine learning pipeline to jointly infer the internal magnetic field 
+  strength <i>B</i><sub>c</sub> and internal rotation rate &Omega; of &gamma; Dor stars 
+  directly from their observed mode periods. Forward models are computed using the Traditional 
+  Approximation of Rotation and Magnetism (TARM; Rui, Ong &amp; Mathis 2023), which provides 
+  a non-perturbative treatment of g-mode frequencies under simultaneous rotation and 
+  magnetic fields (essential in the regime where both effects are large). 
+  A grid of synthetic period-spacing patterns spanning field strengths of ~10 kG to ~1 MG and rotation 
+  rates spanning the observed &gamma; Dor population is used to train a neural network 
+  that learns the mapping from observed periods to physical parameters.
+</p>
+
+<p>
+  The pipeline achieves clean recovery of both parameters on held-out test data. 
+The rotation rate &Omega; is recovered well even for unseen values, suggesting the network
+  learns the underlying physical relationship between period spacing and rotation rather than
+  memorizing the training grid.
+ <i>B</i><sub>c</sub>  is recovered well for high  <i>B</i><sub>c</sub> , but  <i>B</i><sub>c</sub>  recovery degrades for slow rotators at low field strengths, as the characteristic period  <i>P</i><sub>crit</sub> where the magnetic field suppresses modes shifts far outside the observable window, making the magnetic signature invisible
+However, for fast rotators,  <i>P</i><sub>crit</sub> falls within the observable window and intermediate values of <i>B</i><sub>c</sub> are recovered as well.
+   Ongoing work involves using mixture density
+  networks and conditional normalizing flows, which will yield full posterior distributions over
+  <i>B</i><sub>c</sub> and &Omega; rather than point estimates.  Future extensions will incorporate 
+  full stellar model grids to simultaneously constrain additional parameters 
+  such as mass, metallicity, and convective overshooting, enabling population-level 
+  inference across the &gamma; Dor catalog.
+</p>
+
+										
+										<ul class="link-list">
+										<!-- Add paper link here when available -->
+										<!-- <li><a href="" target="_blank" style="color: #2a9d8f; font-size: 40px;">link to research paper</a></li> -->
+										</ul>
+										
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+</html>
