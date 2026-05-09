@@ -19,7 +19,7 @@ For inquiries, please reach me at my Caltech email.
 
 ## Useful Links
 
-- [Peter Scherbak - Resume (PDF)](https://peterscherbak.github.io/scherbak_cv.pdf)  
+- [Peter Scherbak - Resume (PDF)](https://peterscherbak.github.io/Scherbak_resume.pdf)  
   Resume including experience, skills, research, and awards.
 
 - [Peter Scherbak - ORCID Research Profile](https://orcid.org/0000-0003-4221-9097)
