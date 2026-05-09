@@ -119,6 +119,19 @@
   that learns the mapping from observed periods to physical parameters.
 </p>
 
+<!-- FIGURE SET 1: no Pcut -->
+<div style="display: flex; gap: 2em; align-items: flex-start; margin: 2em 0;">
+  <figure style="flex: 1; margin: 0;">
+    <img src="comp_1.png" alt="Recovery of Bc and Omega, no period cut" style="max-width: 100%; height: auto;" />
+    <h3>Recovery of <i>B</i><sub>c</sub> and &Omega; on held-out test data with no observational period cut, colored by rotation period. Both parameters are cleanly recovered across the full training grid, where the model was trained on period spacing.</h3>
+  </figure>
+  <figure style="flex: 1; margin: 0;">
+    <img src="scatter_1.png" alt="Individual test examples, no period cut" style="max-width: 100%; height: auto;" />
+    <h3>Individual test examples spanning the <i>B</i><sub>c</sub>&ndash;&Omega; parameter space, showing predicted (blue) vs. true (red star) values. Without a period cut, <i>B</i><sub>c</sub> is well recovered across the full range.</h3>
+  </figure>
+</div>
+
+
 <p>
   The pipeline achieves clean recovery of both parameters on held-out test data. 
 The rotation rate &Omega; is recovered well even for unseen values, suggesting the network
@@ -133,6 +146,20 @@ However, for fast rotators,  <i>P</i><sub>crit</sub> falls within the observable
   such as mass, metallicity, and convective overshooting, enabling population-level 
   inference across the &gamma; Dor catalog.
 </p>
+
+
+<!-- FIGURE SET 2: with Pcut -->
+<div style="display: flex; gap: 2em; align-items: flex-start; margin: 2em 0;">
+  <figure style="flex: 1; margin: 0;">
+    <img src="YOUR_PCUT_SCATTER.png" alt="Recovery of Bc and Omega, with period cut" style="max-width: 100%; height: auto;" />
+    <h3>Same as above, but with an observational period cut applied. <i>B</i><sub>c</sub> recovery degrades at low field strengths (under ~200 kG) for slow rotators, where <i>P</i><sub>crit</sub> falls far outside the observable window.</h3>
+  </figure>
+  <figure style="flex: 1; margin: 0;">
+    <img src="YOUR_PCUT_GRID.png" alt="Individual test examples, with period cut" style="max-width: 100%; height: auto;" />
+    <h3>Individual test examples with a period cut applied. Slow rotators at relatively low <i>B</i><sub>c</sub> (under ~200 kG) show poor recovery, while fast rotators retain good recovery even at intermediate to low field strengths.</h3>
+  </figure>
+</div>
+
 
 										
 										<ul class="link-list">
