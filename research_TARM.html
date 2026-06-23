@@ -124,7 +124,7 @@
   </figure>
   <figure style="flex: 1; margin: 0;">
     <img src="scatter_1.png" alt="Individual test examples, no period cut" style="max-width: 100%; height: auto;" />
-    <h3>Fig 2: Individual test examples spanning the <i>B</i><sub>c</sub>&ndash;&Omega; parameter space, showing predicted (blue) vs. true (red star) values. Without a period cut, <i>B</i><sub>c</sub> is well recovered across the full range.</h3>
+    <h3>Fig 2: Individual test examples spanning the <i>B</i><sub>c</sub>&ndash;&Omega; parameter space, showing predicted (blue) vs. true (red) values. Without a period cut, <i>B</i><sub>c</sub> is well recovered across the full range.</h3>
   </figure>
 </div>
 
@@ -133,8 +133,8 @@
   The pipeline achieves clean recovery of both parameters on held-out test data with no mode period cuts. 
 The rotation rate &Omega; is recovered well for unseen values, suggesting the network
   learns the underlying physical relationship between period spacing and rotation rather than
-  memorizing the training grid. When realistic mode period cuts are applied, &Omega; is still always recovered well and 
- <i>B</i><sub>c</sub>  is generally recovered well for high  <i>B</i><sub>c</sub>, with many models laying on the diagonal with small errorbars. Although there are cases <i>B</i><sub>c</sub> is predicted to be lower than actual, such stars are associated with large errorbars, demonstrating
+  memorizing the training grid. When realistic mode period cuts are applied (Figs. 3, 4), &Omega; is still always recovered well and 
+ <i>B</i><sub>c</sub>  is generally recovered well for high  <i>B</i><sub>c</sub>, with many models laying on the diagonal with small errorbars. Although is a significant branch of cases where <i>B</i><sub>c</sub> is predicted to be lower than actual (Fig. 4, points at intermediate-high <i>B</i><sub>c</sub>, below the diagonal)  such stars are associated with large errorbars, demonstrating
 	that the neural net was unable to make a good estimate of <i>B</i><sub>c</sub> and acting as a reliable quality flag. <i>B</i><sub>c</sub>  recovery degrades at low field strengths, as the characteristic period  <i>P</i><sub>crit</sub> - where the magnetic field suppresses modes  - shifts far outside the observable window, making the magnetic signature invisible.
   Future extensions will incorporate 
   full stellar model grids to simultaneously constrain additional parameters 
