@@ -111,7 +111,8 @@
   magnetic fields (essential in the regime where both effects are large). 
   A grid of synthetic period-spacing patterns spanning field strengths of ~10 kG to ~1 MG and rotation 
   rates spanning the observed &gamma; Dor population is used to train a neural network 
-  that learns the mapping from observed periods to physical parameters.
+  that learns the mapping from observed periods to physical parameters. The neural network is a convolutional neural net + mixture density network... The synthetic data is significantly
+	augmented during training and testing with window cuts, noise, and missing modes to simulate observational limitations. 
 </p>
 
 <!-- FIGURE SET 1: no Pcut -->
@@ -129,17 +130,15 @@
 
 <p>
   The pipeline achieves clean recovery of both parameters on held-out test data. 
-The rotation rate &Omega; is recovered well even for unseen values, suggesting the network
+The rotation rate &Omega; is recovered well for unseen values, suggesting the network
   learns the underlying physical relationship between period spacing and rotation rather than
-  memorizing the training grid.
- <i>B</i><sub>c</sub>  is recovered well for high  <i>B</i><sub>c</sub> , but  <i>B</i><sub>c</sub>  recovery degrades for slow rotators at low field strengths, as the characteristic period  <i>P</i><sub>crit</sub> where the magnetic field suppresses modes shifts far outside the observable window, making the magnetic signature invisible
-However, for fast rotators,  <i>P</i><sub>crit</sub> falls within the observable window and intermediate values of <i>B</i><sub>c</sub> are recovered as well.
-   Ongoing work involves using mixture density
-  networks and conditional normalizing flows, which will yield full posterior distributions over
-  <i>B</i><sub>c</sub> and &Omega; rather than point estimates.  Future extensions will incorporate 
+  memorizing the training grid. 
+ <i>B</i><sub>c</sub>  is generally recovered well for high  <i>B</i><sub>c</sub>, with many models laying on the diagonal with small errorbars. Although in some other cases <i>B</i><sub>c</sub> is predicted to be lower than actual, such stars are associated with large errobars, demonstrating
+	that the neural net was unable to make a good estimate of <i>B</i><sub>c</sub>. <i>B</i><sub>c</sub>  recovery degrades at low field strengths, as the characteristic period  <i>P</i><sub>crit</sub> where the magnetic field suppresses modes shifts far outside the observable window, making the magnetic signature invisible.
+  Future extensions will incorporate 
   full stellar model grids to simultaneously constrain additional parameters 
   such as mass, metallicity, and convective overshooting, enabling population-level 
-  inference across the &gamma; Dor catalog.
+  inference across observed &gamma; Dor catalogs.
 </p>
 
 
