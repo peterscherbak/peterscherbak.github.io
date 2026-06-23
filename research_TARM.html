@@ -109,9 +109,10 @@
   Approximation of Rotation and Magnetism (TARM; Rui, Ong &amp; Mathis 2023), which provides 
   a non-perturbative treatment of g-mode frequencies under simultaneous rotation and 
   magnetic fields (essential in the regime where both effects are large). 
-  A grid of synthetic period-spacing patterns spanning field strengths of ~10 kG to ~1 MG and rotation 
+  A library of synthetic period-spacing patterns spanning field strengths of ~10 kG to ~1 MG and rotation 
   rates spanning the observed &gamma; Dor population is used to train a neural network 
-  that learns the mapping from observed periods to physical parameters. The neural network is a convolutional neural net + mixture density network... The synthetic data is significantly
+  that learns the mapping from observed periods to physical parameters. The neural network is a 1D convolutional network that processes the sequence of mode periods and period spacings as two parallel channels, producing a mixture density output over <i>B</i><sub>c</sub> — giving a full posterior distribution per star rather than a point estimate.
+	 The synthetic data is significantly
 	augmented during training and testing with window cuts, noise, and missing modes to simulate observational limitations. 
 </p>
 
@@ -119,21 +120,21 @@
 <div style="display: flex; gap: 2em; align-items: flex-start; margin: 2em 0;">
   <figure style="flex: 1; margin: 0;">
     <img src="comp_1.png" alt="Recovery of Bc and Omega, no period cut" style="max-width: 100%; height: auto;" />
-    <h3>Recovery of <i>B</i><sub>c</sub> and &Omega; on held-out test data with no observational period cut, colored by rotation period. Both parameters are cleanly recovered across the full training grid, where the model was trained on period spacing.</h3>
+    <h3>Fig 1:  Recovery of Bc and &Omega; on held-out test data, colored by rotation period. Point estimates for Bc correspond to the mean of the highest-weight component of a K=5 Gaussian mixture (MDN); &Omega; is predicted directly via MSE. Both parameters are recovered across the full training range when the model is trained on period spacing and there is no observational period cut.</h3>
   </figure>
   <figure style="flex: 1; margin: 0;">
     <img src="scatter_1.png" alt="Individual test examples, no period cut" style="max-width: 100%; height: auto;" />
-    <h3>Individual test examples spanning the <i>B</i><sub>c</sub>&ndash;&Omega; parameter space, showing predicted (blue) vs. true (red star) values. Without a period cut, <i>B</i><sub>c</sub> is well recovered across the full range.</h3>
+    <h3>Fig 2: Individual test examples spanning the <i>B</i><sub>c</sub>&ndash;&Omega; parameter space, showing predicted (blue) vs. true (red star) values. Without a period cut, <i>B</i><sub>c</sub> is well recovered across the full range.</h3>
   </figure>
 </div>
 
 
 <p>
-  The pipeline achieves clean recovery of both parameters on held-out test data. 
+  The pipeline achieves clean recovery of both parameters on held-out test data with no period cuts. 
 The rotation rate &Omega; is recovered well for unseen values, suggesting the network
   learns the underlying physical relationship between period spacing and rotation rather than
-  memorizing the training grid. 
- <i>B</i><sub>c</sub>  is generally recovered well for high  <i>B</i><sub>c</sub>, with many models laying on the diagonal with small errorbars. Although in some other cases <i>B</i><sub>c</sub> is predicted to be lower than actual, such stars are associated with large errobars, demonstrating
+  memorizing the training grid. When realistic period cuts are applied, &Omega is still always recovered well.
+ <i>B</i><sub>c</sub>  is generally recovered well for high  <i>B</i><sub>c</sub>, with many models laying on the diagonal with small errorbars. Although in some other cases <i>B</i><sub>c</sub> is predicted to be lower than actual, such stars are associated with large errorbars, demonstrating
 	that the neural net was unable to make a good estimate of <i>B</i><sub>c</sub>. <i>B</i><sub>c</sub>  recovery degrades at low field strengths, as the characteristic period  <i>P</i><sub>crit</sub> where the magnetic field suppresses modes shifts far outside the observable window, making the magnetic signature invisible.
   Future extensions will incorporate 
   full stellar model grids to simultaneously constrain additional parameters 
@@ -145,12 +146,13 @@ The rotation rate &Omega; is recovered well for unseen values, suggesting the ne
 <!-- FIGURE SET 2: with Pcut -->
 <div style="display: flex; gap: 2em; align-items: flex-start; margin: 2em 0;">
   <figure style="flex: 1; margin: 0;">
-    <img src="comp_2.png" alt="Recovery of Bc and Omega, with period cut" style="max-width: 100%; height: auto;" />
-    <h3>Same as above, but with an observational period cut applied. <i>B</i><sub>c</sub> recovery degrades at low field strengths (under ~200 kG) for slow rotators, where <i>P</i><sub>crit</sub> falls far outside the observable window.</h3>
+    <img src="Fig_MDN_1.png" alt="Recovery of Bc and Omega, with period cuts" style="max-width: 100%; height: auto;" />
+    <h3>Fig 3: Similar to Fig. 1, but with mode period window cuts applied, so the neural net never sees the full range of theoretical mode periods. <i>B</i><sub>c</sub> recovery degrades at low field strengths (under 100 kG), where <i>P</i><sub>crit</sub> tends to fall far outside the observable window and 
+		the curvature signal in the period spacing becomes small.</h3>
   </figure>
   <figure style="flex: 1; margin: 0;">
-    <img src="scatter_2.png" alt="Individual test examples, with period cut" style="max-width: 100%; height: auto;" />
-    <h3>Individual test examples with a period cut applied. Slow rotators at relatively low <i>B</i><sub>c</sub> (under ~200 kG) show poor recovery, while fast rotators retain good recovery even at intermediate to low field strengths.</h3>
+    <img src="Fig_MDN_2.png" alt="Bc errorbars with period cuts" style="max-width: 100%; height: auto;" />
+    <h3>Fig 4: For the same configuration as Fig. 3, recovery of Bc with errorbars (±1&sigma; of the highest-weight MDN component in log10(Bc) space) shown for a random subset of 200 test stars. Left: colors correspond to the magnitude of &sigma; Right: Left: colors correspond to the rotation period for each star.    </h3>
   </figure>
 </div>
 
