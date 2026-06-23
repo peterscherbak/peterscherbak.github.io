@@ -130,10 +130,10 @@
 
 
 <p>
-  The pipeline achieves clean recovery of both parameters on held-out test data with no period cuts. 
+  The pipeline achieves clean recovery of both parameters on held-out test data with no mode period cuts. 
 The rotation rate &Omega; is recovered well for unseen values, suggesting the network
   learns the underlying physical relationship between period spacing and rotation rather than
-  memorizing the training grid. When realistic period cuts are applied, &Omega; is still always recovered well and 
+  memorizing the training grid. When realistic mode period cuts are applied, &Omega; is still always recovered well and 
  <i>B</i><sub>c</sub>  is generally recovered well for high  <i>B</i><sub>c</sub>, with many models laying on the diagonal with small errorbars. Although there are cases <i>B</i><sub>c</sub> is predicted to be lower than actual, such stars are associated with large errorbars, demonstrating
 	that the neural net was unable to make a good estimate of <i>B</i><sub>c</sub> and acting as a reliable quality flag. <i>B</i><sub>c</sub>  recovery degrades at low field strengths, as the characteristic period  <i>P</i><sub>crit</sub> - where the magnetic field suppresses modes  - shifts far outside the observable window, making the magnetic signature invisible.
   Future extensions will incorporate 
@@ -148,7 +148,7 @@ The rotation rate &Omega; is recovered well for unseen values, suggesting the ne
   <figure style="flex: 1; margin: 0;">
     <img src="Fig_MDN_1.png" alt="Recovery of Bc and Omega, with period cuts" style="max-width: 100%; height: auto;" />
     <h3>Fig 3: Similar to Fig. 1, but with mode period window cuts applied, so the neural net never sees the full range of theoretical mode periods. <i>B</i><sub>c</sub> recovery degrades at low field strengths (under 100 kG), where <i>P</i><sub>crit</sub> tends to fall far outside the observable window and 
-		the curvature signal in the period spacing becomes small.  &Omega; is always recovered well over the modelled range of periods. </h3>
+		the curvature signal in the period spacing becomes small.  &Omega; is always recovered well over the modelled range. </h3>
   </figure>
   <figure style="flex: 1; margin: 0;">
     <img src="Fig_MDN_2.png" alt="Bc errorbars with period cuts" style="max-width: 100%; height: auto;" />
